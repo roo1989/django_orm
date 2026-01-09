@@ -7,9 +7,6 @@ from orm_tutorial.models import Restaurant, Rating
 
 
 def run():
-    restaurant = Restaurant.objects.first()
-    user = User.objects.first()
-
     print(Rating.objects.all())
 
     # Filter queryset based off ratings.
