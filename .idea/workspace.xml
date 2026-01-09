@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95be4676-be74-49d7-a9eb-d06e98f4b59f" name="Changes" comment="" />
+    <list default="true" id="95be4676-be74-49d7-a9eb-d06e98f4b59f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/orm_tutorial/scripts/foreign_key_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm_tutorial/scripts/orm_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/orm_tutorial/scripts/orm_script.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +52,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -94,7 +104,7 @@
       <updated>1767960189850</updated>
       <workItem from="1767960191006" duration="1817000" />
       <workItem from="1767962083465" duration="5018000" />
-      <workItem from="1767967306547" duration="560000" />
+      <workItem from="1767967306547" duration="5605000" />
     </task>
     <servers />
   </component>
