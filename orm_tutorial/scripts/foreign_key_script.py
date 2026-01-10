@@ -21,4 +21,9 @@ def run():
     # Filter by NOT value.
     print(Rating.objects.exclude(rating__lte=3))
 
+    # pprint(connection.queries)
+
+    # Get ratings from a restaurant using the rating set.
+    restaurant = Restaurant.objects.first()
     pprint(connection.queries)
+    print(restaurant.rating_set.all())
