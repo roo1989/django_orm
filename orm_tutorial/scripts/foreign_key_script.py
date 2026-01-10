@@ -23,7 +23,8 @@ def run():
 
     # pprint(connection.queries)
 
-    # Get ratings from a restaurant using the rating set.
+    # Get the first restaurant
     restaurant = Restaurant.objects.first()
-    pprint(connection.queries)
-    print(restaurant.rating_set.all())
+    rating= restaurant.ratings.first()
+
+    print(f"restaurant: {restaurant.name} rating is {rating.rating}")
