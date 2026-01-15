@@ -1,0 +1,68 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Django
+# =========================
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Django migrations (optional)
+# Uncomment if you don't want to track migrations
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# =========================
+# Testing / Coverage
+# =========================
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# =========================
+# Linters / Formatters
+# =========================
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# =========================
+# IDEs / Editors
+# =========================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# OS / Misc
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
