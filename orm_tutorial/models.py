@@ -1,5 +1,11 @@
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
+
+def validator_restaurant_name_begins_with_a(value):
+    if not value.startswith('a'):
+        raise ValidationError('Restaurant name must begin with a')
 
 class Restaurant(models.Model):
     class TypeChoices(models.TextChoices):
@@ -24,7 +30,9 @@ class Restaurant(models.Model):
 class Rating(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name='ratings')
-    rating = models.PositiveSmallIntegerField()
+    rating = models.PositiveSmallIntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(5)]
+    )
 
     def __str__(self):
         return f"Rating: {self.rating}"
