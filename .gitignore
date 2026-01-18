@@ -2,6 +2,7 @@
 # Python
 # =========================
 __pycache__/
+*.pyc
 *.py[cod]
 *$py.class
 
@@ -54,6 +55,10 @@ htmlcov/
 # IDEs / Editors
 # =========================
 .idea/
+.idea/workspace.xml
+
+db.sqlite3
+
 .vscode/
 *.sublime-project
 *.sublime-workspace
